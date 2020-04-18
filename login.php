@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <?php include 'includes/head.php';?>
+     <?php include 'head.php';?>
      <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylelogin.css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
 	
-<?php include 'includes/navbar.php';?>
-<div class="signup-form">
-            <img src="img/pic.png">
+<?php include 'navbar.php';?>
+<div class="sign-in-form">
+            <img src="pic.png">
             <form action="index.html" method="POST">
-                <input type ="text" placeholder="User Name" class="txt">
-                <input type ="email" placeholder="Email" class="txt">
-                <input type ="password" placeholder="Password" class="txt">
-                <input type ="button" value="User Name" class="btn">
+                <input type ="text" placeholder="User Name" class="txt" name="UserName">
+                <input type ="email" placeholder="Email" class="txt" name="Email">
+                <input type ="password" placeholder="Password" class="txt" name="Password">
+                <input type ="password" placeholder="Confirm Password" class="txt" name="Confirm Password">
+                <form action="index.php">
+                <input type="submit" value="Sign In" class="btn1">
+                </form>
+                <form action="signup.php">
+                <input type="submit" value="Sign Up" class="btn2">
+                </form>
+                
                 <a href="#">Already Have a Account</a>
             </form>
         </div>
-<?php include 'includes/scripts.php';?>
+<?php include 'scripts.php';?>
 </body>
 </html>
 
